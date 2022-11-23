@@ -15,17 +15,10 @@ if(isFullStack == 'Não' || isFullStack == 'NÃO') {
     console.log("Muito bem! Continue se desenvolvendo para se tornar um Fullstack.")
 }
 
-let question = ''
-while(question == "SIM") {
-    let tecnologies = prompt("Tem mais alguma tecnologia que você gostaria de aprender? SIM ou NÃO")
-    let listTecnologies = []
-    if(tecnologies == 'SIM') {
-        let whatTecnologies = prompt("Quais tecnologias?")
-        listTecnologies = [whatTecnologies]
-        question = tecnologies
-    }
-    else {
-        break
-        console.log(`As seguintes tecnologias ${listTecnologies} são otimas para serem aprendidas.`)
-    }    
+let tecnologies = prompt("Tem mais alguma tecnologia que você gostaria de aprender? SIM ou NÃO")
+
+while(tecnologies == "SIM") {    
+   let whatTecnologies = prompt("Quais tecnologias?")
+        alert(`${whatTecnologies} é otimo para se aprender.`)
+  tecnologies = prompt("Tem mais alguma tecnologia que você gostaria de aprender? SIM ou NÃO")  
 }
